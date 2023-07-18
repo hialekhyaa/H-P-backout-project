@@ -19,6 +19,7 @@ inputFile = input()
 
 #read the csv file
 data = pd.read_csv(inputFile)
+
 print("Graphing " + inputFile + ".....") 
 
 x = data.riglocaltime
