@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 #import pyodbc
 
-fig = plt.figure(figsize=(20, 3))
+fig = plt.figure(figsize=(10, 3))
 gs = fig.add_gridspec(11, hspace=0)
 axs = gs.subplots(sharex=True, sharey=False)
 
@@ -55,7 +55,7 @@ axs[8].plot(x, data.adspdeltap, 'springgreen', label='adspdeltap')
 
 axs[9].plot(x, data.standpipepressure, 'purple', label='standpipepressure')
 
-axs[10].plot(x, data.tdmodestate, 'navy', label='tdmodestate')
+axs[10].step(x, data.tdmodestate, 'navy', label='tdmodestate')
 
 
 axs[0].set_ylabel('hookload', rotation='horizontal')
