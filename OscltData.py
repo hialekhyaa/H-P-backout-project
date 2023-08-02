@@ -63,6 +63,7 @@ y16 = data.bottomdepth
 y17 = data.standpipepressure
 y18 = data.hookload
 y19 = data.tdmodestate
+t20 = data.Flow
 
 # PLOT DATA #
 l1, = ax2.plot(x, y1, 'maroon', label='adpvdeltap')

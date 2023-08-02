@@ -73,22 +73,22 @@ def callback(label):
 check.on_clicked(callback)
 
 #annotations for each point - adding or subtracting from v specifies the location of the displayed number
-for i, v in enumerate(data.torque):
-    ax.text(i, v+2, "%d" %v, ha="center", color='blue')
-for i, v in enumerate(data.speed):
-    ax.text(i, v+2, "%d" %v, ha="center", color='violet')
-for i, v in enumerate(data.depth):
-    ax2.text(i, v+4, "%d" %v, ha="center", color='forestgreen')
-for i, v in enumerate(data.revwraps):
-    ax.text(i, v+2, "%d" %v, ha="center", color='darkorange')
-for i, v in enumerate(data.fwdwraps):
-    ax.text(i, v-2, "%d" %v, ha="center", color='deeppink')
-for i, v in enumerate(data.offset):
-    ax.text(i, v-2, "%d" %v, ha="center", color='maroon')
-for i, v in enumerate(data.bitsize):
-    ax.text(i, v+1, "%d" %v, ha="center", color='deepskyblue')
-for i, v in enumerate(data.pipesize):
-    ax.text(i, v+1, "%d" %v, ha="center", color='purple')
+#for i, v in enumerate(data.torque):
+    #ax.text(i, v+2, "%d" %v, ha="center", color='blue')
+#for i, v in enumerate(data.speed):
+    #ax.text(i, v+2, "%d" %v, ha="center", color='violet')
+#for i, v in enumerate(data.depth):
+    #ax2.text(i, v+4, "%d" %v, ha="center", color='forestgreen')
+#for i, v in enumerate(data.revwraps):
+    #ax.text(i, v+2, "%d" %v, ha="center", color='darkorange')
+#for i, v in enumerate(data.fwdwraps):
+    #ax.text(i, v-2, "%d" %v, ha="center", color='deeppink')
+#for i, v in enumerate(data.offset):
+    #ax.text(i, v-2, "%d" %v, ha="center", color='maroon')
+#for i, v in enumerate(data.bitsize):
+    #ax.text(i, v+1, "%d" %v, ha="center", color='deepskyblue')
+#for i, v in enumerate(data.pipesize):
+    #ax.text(i, v+1, "%d" %v, ha="center", color='purple')
 
 #creates a grid behind lines
 ax.grid()
